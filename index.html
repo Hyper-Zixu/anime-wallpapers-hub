@@ -3,42 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otaku Walls - 4K Anime Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <title>Otaku Galaxy - 4K Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-kanji">壁紙</div>
-
-    <nav class="navbar">
-        <div class="logo">OTAKU<span>WALLS</span> <span class="jp-text">オタク</span></div>
-        <div class="nav-items">
-            <a href="#">Anime</a>
-            <a href="#">Cars</a>
+    <div class="glow-bg"></div>
+    
+    <nav class="glass-nav">
+        <div class="logo">OTAKU<span>GALAXY</span></div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Find your vibe..." onkeyup="searchWallpapers()">
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>ULTIMATE <span>4K</span> AESTHETIC</h1>
-            <p>Level up your screen. 限界を超えろ.</p>
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search anime, supercar, vibes...">
-                <button onclick="searchWallpapers()">SEARCH</button>
-            </div>
+    <header class="featured-hero">
+        <div class="hero-overlay">
+            <span class="tag">FEATURED 4K</span>
+            <h1>NEO TOKYO 2077</h1>
+            <p>High-resolution aesthetic for your mobile and desktop.</p>
+            <button class="btn-neon">GET NOW</button>
         </div>
     </header>
 
-    <main>
-        <div class="category-filters">
-            <button class="filter-btn active" onclick="filterCategory('All', this)">ALL</button>
-            <button class="filter-btn" onclick="filterCategory('Anime', this)">ANIME アニメ</button>
-            <button class="filter-btn" onclick="filterCategory('Cars', this)">CARS 車</button>
+    <section class="container">
+        <div class="filter-tabs">
+            <button class="tab active" onclick="filterCategory('All', this)">ALL</button>
+            <button class="tab" onclick="filterCategory('Anime', this)">ANIME</button>
+            <button class="tab" onclick="filterCategory('Cars', this)">CARS</button>
+            <button class="tab" onclick="filterCategory('Live', this)">LIVE</button>
         </div>
 
-        <div class="grid" id="wallpaperGrid">
+        <div class="wall-grid" id="wallpaperGrid">
             </div>
-    </main>
+    </section>
 
     <script src="script.js"></script>
 </body>
