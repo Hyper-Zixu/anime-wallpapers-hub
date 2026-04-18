@@ -3,37 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Otaku Walls - Premium 4K</title>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Otaku Walls - 4K & Live</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="bg-effect"></div>
+    <div class="bg-kanji">壁紙</div>
 
     <nav class="navbar">
-        <div class="logo">OTAKU<span>WALLS</span></div>
-        <div class="nav-right">
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchWallpapers()">
-            </div>
-            <button class="profile-btn" onclick="toggleProfile()">👤 PROFILE</button>
+        <div class="logo">OTAKU<span>WALLS</span> <span class="jp-text">アニメ</span></div>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search 4K / Live..." onkeyup="searchWallpapers()">
         </div>
     </nav>
 
-    <div class="profile-modal" id="profileModal">
-        <div class="modal-content">
-            <span class="close-btn" onclick="toggleProfile()">&times;</span>
-            <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
-            <h2>Welcome, Otaku!</h2>
-            <p>Level: Premium Member</p>
-            <button class="login-btn">Login / Register</button>
-            <button class="logout-btn" onclick="toggleProfile()">Close</button>
-        </div>
-    </div>
-
     <header class="hero">
-        <h1>LEVEL UP YOUR <span>SCREEN</span></h1>
-        <p>The ultimate 4K Anime & Car wallpapers collection.</p>
+        <h1>BEYOND <span>LIMITS</span></h1>
+        <p>Premium 4K Anime & Live Car Wallpapers.</p>
     </header>
 
     <main class="main-container">
@@ -41,18 +27,12 @@
             <button class="filter-btn active" onclick="filterData('All', this)">ALL</button>
             <button class="filter-btn" onclick="filterData('Anime', this)">ANIME</button>
             <button class="filter-btn" onclick="filterData('Cars', this)">CARS</button>
+            <button class="filter-btn" onclick="filterData('Live', this)">LIVE 🔴</button>
         </div>
 
         <div class="wallpaper-grid" id="grid">
             </div>
     </main>
-
-    <script src="script.js"></script>
-</body>
-</html>
-        <div class="wall-grid" id="wallpaperGrid">
-            </div>
-    </section>
 
     <script src="script.js"></script>
 </body>
